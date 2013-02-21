@@ -75,6 +75,7 @@ struct video_param {
 	__u16 time_interval;
 };
 /* Our private ioctl */
+#define BASE_VIDIOCPRIVATE      192             /* 192-255 are private */
 #define SPCAGVIDIOPARAM _IOR('v',BASE_VIDIOCPRIVATE + 1,struct video_param)
 #define SPCASVIDIOPARAM _IOW('v',BASE_VIDIOCPRIVATE + 2,struct video_param)
 
